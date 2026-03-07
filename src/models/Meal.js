@@ -12,7 +12,7 @@ class Meal {
    * @param {string|null}  [params.timestamp] - ISO-8601 timestamp (Thời gian); defaults to now
    */
   constructor({ id = null, mealName = null, calories = null, timestamp = null } = {}) {
-    this.id = id !== undefined ? id : null;
+    this.id = id;
     this.mealName = mealName != null ? String(mealName) : null;
     this.calories = calories != null ? Number(calories) : null;
     this.timestamp = timestamp != null ? String(timestamp) : new Date().toISOString();
