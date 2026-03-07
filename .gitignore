@@ -137,3 +137,14 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Expo / React Native
+.expo/
+.expo-shared/
+android/
+ios/
+web-build/
+dist/
+
+# Jest coverage
+coverage/
